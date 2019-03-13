@@ -33,8 +33,8 @@ h2 {
 }
 
 header, section, footer {
-  padding-left: 8em; /* 80px */
-  padding-right: 8em; /* 80px */
+  padding-left: 6em; /* 80px */
+  padding-right: 6em; /* 80px */
 }
 
 input, button, textarea {
@@ -184,7 +184,9 @@ header {
 /******** lower-container *********/
 .lower-container {
   text-align: center;
-  margin: 10em 0;
+  margin-top: 10em;
+  margin-bottom: 0.8em;
+
 }
 
 .lower-container p {
@@ -217,6 +219,7 @@ input[type=email] {
 
 .low-join-form {
   margin-right: 1em;
+  height: 3em;
 }
 
 .join-form{
@@ -254,13 +257,13 @@ footer {
   color: white;
   display: flex;
   justify-content: space-between;
-  font-size: 1.1em;
+  font-size: 1em;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
 footer > div {
-    padding: 1em;
+    padding: 2em;
 }
 
 .contact {
@@ -300,13 +303,10 @@ footer > div {
 }
 
 .menu ul li:first-child {
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 1em;
   margin-bottom: 1.2em;
-}
-
-.email-submit {
-  width: 100%;
+  font-size: 1.1em
 }
 
 .email-submit p {
