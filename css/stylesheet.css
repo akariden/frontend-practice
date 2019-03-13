@@ -43,24 +43,44 @@ input, button, textarea {
   font-size: 100%;
 }
 
+.top-container, .mid-container, .lower-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+
 /*************** header **********************/
+
+header {
+}
 
 .title2 {
   display: none;
 }
 
-header {
-  background: linear-gradient(90deg, rgba(85, 31, 186) 50%, rgb(113, 30, 186));
-  color: #fff;
-  padding-top: 2em;
-  padding-bottom: 2em;
+.header-wrap {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+
+}
+
+header {
+  background: linear-gradient(90deg, rgba(85, 31, 186) 50%, rgb(113, 30, 186));
+  width: 100%;
+  color: #fff;
+  padding-top: 2em;
+  padding-bottom: 2em;
   position: fixed;
   width: 100%;
   z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translate( -50%, 0);
 }
 
 header img {
@@ -319,9 +339,10 @@ footer > div {
   float: right;
   margin-top: 1em;
 }
-/******** mdeiaquery *********/
+/******** medeiaquery *********/
 
-@media screen and (max-width: 1450px) {
+
+@media screen and (max-width: 1500px) {
   footer {
     flex-wrap: wrap;
   }
@@ -446,6 +467,7 @@ footer > div {
     padding-left: 3em; /* 80px */
     padding-right: 3em; /* 80px */
   }
+
   header img {
     width: 6em;
   }
